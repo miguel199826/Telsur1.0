@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TELSUR</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="Framework/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="Framework/JS/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<nav class="nav-extended">
+    <div class="nav-wrapper red">
+        <a href="#" class="brand-logo center">Telsur comunicaciones S.A.C</a>
+    </div>
+</nav>
+
+<div class="section container">
+    <div class="row">
+        <form class="col s12">
+            <div class="row card-panel">
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">textsms</i>
+                    <input type="text" id="autocomplete-input" class="autocomplete" class="validate" required>
+                    <label for="autocomplete-input">N° Boleta</label>
+                </div>
+                <div class="input-field col s3">
+                    <select name="producto">
+                        <option value="" disabled selected>Seleccionar Tipo:</option>
+                        <option value="1">Equipos Mobil</option>
+                        <option value="2">Accesorios</option>
+                        <option value="3">Servicios Claro</option>
+                        <option value="3">Recarga</option>
+                    </select>
+                    <label>Tipo de Producto:</label>
+                </div>
+                <div class="input-field col s3">
+                    <select name="opciones">
+                        <option value="" disabled selected>Seleccionar Producto:</option>
+                        <option value="1">LG</option>
+                        <option value="2">Nokia</option>
+                        <option value="3">Sansung</option>
+                        <option value="3">OLO</option>
+                    </select>
+                    <label>Producto:</label>
+                </div>
+
+                <div class="input-field col s3">
+                    <input id="Monto" type="text" class="validate" required>
+                    <label for="Monto">Monto</label>
+                </div>
+                <div class="center-align">
+                    <button class="waves-effect waves-light btn red" type="submit">Registrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="section container">
+    <div class="row">
+        <form class="col s12">
+            <div class="row card-panel">
+                <a class="waves-effect waves-light btn red">Agregar</a>
+                <a class="waves-effect waves-light btn red">Eliminar</a>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Item Name</th>
+                            <th>Item Price</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        </tbody>
+                     </table>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="JS/Reporte.js"></script>
+<script type="text/javascript" src="Framework/js/materialize.min.js"></script>
+</body>
+</html>
