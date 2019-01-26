@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="vendor/bulma-0.7.1/bulma.min.css" rel="stylesheet">
+    <script src="vendor/vue-2.5.16/vue.js"></script>
+    <script src="vendor/axios-0.18.0/axios.js"></script>
+</head>
+<body>
+
+    <div id="main">
+        <div v-show="pagina == 1">
+            <a class="button" v-on:click="obtenerAlumnos">Traer información</a>
+            <table class="table is-hoverable">
+                <thead>
+                  <tr>
+                    <th><abbr title="Orden">#</abbr></th>
+                    <th>Apellidos y nombres</th>
+                    <th>Asistencia</th>
+                    <th>Asistencia</th>
+
+                  </tr>
+                </thead>
+               
+                <tbody  >
+                    <tr is="todo-alumno" v-for>
+
+                    </tr>
+                
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+
+
+    <script src="app/main.js"></script>
+
+</body>
+</html>

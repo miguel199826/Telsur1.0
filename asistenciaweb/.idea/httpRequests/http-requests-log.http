@@ -1,0 +1,20 @@
+POST http://localhost:28080/asistenciaweb/servicios/agregarAsistencia
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"identificador":"20011075A" }
+
+<> 2018-06-23T115441.200.json
+
+###
+
+POST http://localhost:28080/asistenciaweb/servicios/obtenerAlumnos
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-06-23T115322.200.json
+
+###
+
